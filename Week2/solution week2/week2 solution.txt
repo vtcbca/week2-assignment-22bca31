@@ -1,0 +1,117 @@
+1.create table 
+
+     stud(id,name)
+     studdetails(id,city,mobile_no)
+
+-->create table stud191
+ (
+    id int primary key,
+    name varchar(30)
+ );
+
+-->create table stud191_detail
+(
+    id int references stud191(id),
+    city varchar(35),
+    moblie_no numeric
+);
+2.insert minimum 10 records in each table.
+
+ insert into stud191
+ values(01,'radha');
+ insert into stud191
+ values(02,'krishna');
+ insert into stud191
+ values(03,'sai');
+ insert into stud191
+ values(04,'shiv');
+ insert into stud191
+ values(05,'gopi');
+ insert into stud191
+ values(06,'shyam');
+ insert into stud191
+ values(07,'om');
+ insert into stud191
+ values(08,'mahi');
+ insert into stud191
+ values(09,'sunny');
+ insert into stud191
+ values(10,'neha');
+ 
+ 
+-->select*from stud191;
+1|radha
+2|krishna
+3|sai
+4|shiv
+5|gopi
+6|shyam
+7|om
+8|mahi
+9|sunny
+10|neha
+
+--> insert into stud191_detail
+    values(01,'surat',8965234901);
+    insert into stud191_detail
+    values(02,'songhad',9965234988);
+    insert into stud191_detail
+    values(03,'bharuch',8465234980);
+    insert into stud191_detail
+    values(04,'vyara',6356784351);
+    insert into stud191_detail
+    values(05,'bardoli',9356757898);
+    insert into stud191_detail
+    values(06,'navsari',6456757891);
+    insert into stud191_detail
+    values(07,'valod',9956757800);
+    insert into stud191_detail
+    values(08,'gandhinagar',8456234808);
+    insert into stud191_detail
+    values(09,'bajipura',9556234877);
+    insert into stud191_detail
+    values(010,'valsad',9856234864);
+
+-->select*from stud191_detail;
+1|surat|8965234901
+2|songhad|9965234988
+3|bharuch|8465234980
+4|vyara|6356784351
+5|bardoli|9356757898
+6|navsari|6456757891
+7|valod|9956757800
+8|gandhinagar|8456234808
+9|bajipura|9556234877
+10|valsad|9856234864
+
+3.display student whose city name start with 'b'.
+
+-->select*from stud191_detail
+ where city LIKE 'b%';
+3|bharuch|8465234980
+5|bardoli|9356757898
+9|bajipura|9556234877
+
+4.display whose students come from surat.
+ 
+-->select*from stud191_detail
+   where city='surat';
+1|surat|8965234901
+
+5.update mobileno whose coming from surat.
+
+-->update stud191_detail
+   set mobile_no=8469586672
+   where city='surat';
+
+-->select*from stud191_detail;
+1|surat|8469586672
+2|songhad|9965234988
+3|bharuch|8465234980
+4|vyara|6356784351
+5|bardoli|9356757898
+6|navsari|6456757891
+7|valod|9956757800
+8|gandhinagar|8456234808
+9|bajipura|9556234877
+10|valsad|9856234864
