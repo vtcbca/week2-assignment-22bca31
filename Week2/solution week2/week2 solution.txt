@@ -3,7 +3,7 @@
      stud(id,name)
      studdetails(id,city,mobile_no)
 
--->create table stud191
+-->create table stud31
  (
     id int primary key,
     name varchar(30)
