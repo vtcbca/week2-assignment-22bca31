@@ -53,23 +53,23 @@
 
 --> insert into stud31_detail
     values(01,'surat',8965234901);
-    insert into stud191_detail
+    insert into stud31_detail
     values(02,'songhad',9965234988);
-    insert into stud191_detail
+    insert into stud31_detail
     values(03,'bharuch',8465234980);
-    insert into stud191_detail
+    insert into stud31_detail
     values(04,'vyara',6356784351);
-    insert into stud191_detail
+    insert into stud31_detail
     values(05,'bardoli',9356757898);
-    insert into stud191_detail
+    insert into stud31_detail
     values(06,'navsari',6456757891);
-    insert into stud191_detail
+    insert into stud31_detail
     values(07,'valod',9956757800);
-    insert into stud191_detail
+    insert into stud31_detail
     values(08,'gandhinagar',8456234808);
-    insert into stud191_detail
+    insert into stud31_detail
     values(09,'bajipura',9556234877);
-    insert into stud191_detail
+    insert into stud31_detail
     values(010,'valsad',9856234864);
 
 -->select*from stud31_detail;
